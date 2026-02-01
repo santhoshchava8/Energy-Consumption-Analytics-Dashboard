@@ -63,7 +63,7 @@ df_calendar = pd.DataFrame(calendar_list)
 
 # 5. Fact_Consumption (10,000 Rows)
 # ---------------------------------------------------------
-num_rows = 50000
+num_rows = 100000
 
 # Randomly sample keys for the foreign keys
 # We select random dates from the calendar we just created
@@ -98,10 +98,10 @@ df_fact = pd.DataFrame(fact_data)
 # ---------------------------------------------------------
 
 export_path = r'C:\Users\chava\Projects\Energy-Consumption-Analytics-Dashboard\Storage'
-df_utility.to_csv(export_path+'Dim_Utility.csv', index=False)
-df_vendor.to_csv(export_path+'Dim_Vendor.csv', index=False)
-df_customer.to_csv(export_path+'Dim_Customer.csv', index=False)
-df_calendar.to_csv(export_path+'Dim_Calendar.csv', index=False)
-df_fact.to_csv(export_path+'Fact_Consumption.csv', index=False)
+df_utility.to_csv(export_path+'\Dim_Utility.csv', index=False)
+df_vendor.to_csv(export_path+'\Dim_Vendor.csv', index=False)
+df_customer.to_csv(export_path+'\Dim_Customer.csv', index=False)
+df_calendar.to_csv(export_path+'\Dim_Calendar.csv', index=False)
+df_fact.to_csv(export_path+'\Fact_Consumption.csv', index=False)
 
 print(f"Files generated successfully. Fact table contains {len(df_fact)} rows.")
