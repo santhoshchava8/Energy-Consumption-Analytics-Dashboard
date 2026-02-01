@@ -1,0 +1,4 @@
+Utility_Key,Utility_Type,Description,Unit
+1,Electricity,Standard household power,kWh
+2,Gas,Heating and cooking supply,m3
+3,Water,Water supply,lt
